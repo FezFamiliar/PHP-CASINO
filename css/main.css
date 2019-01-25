@@ -1,0 +1,356 @@
+body{background-color:#72A0C1;}
+.toggle{display:none !important;cursor:pointer;}
+section{padding-top:100px;}
+.coin{
+
+    display: inline-flex;
+    border-radius: 50%;
+    margin: 10px;
+    background: #fff;
+    border: 2px dotted #a9a9a9;
+    -webkit-box-shadow: inset 0 0 0 5px #a9a9a9;
+    box-shadow: inset 0 0 0 5px #a9a9a9;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition:all 0.5s ease;
+
+}
+.italic{margin-bottom:10px;cursor:pointer;}
+.coin-heads{
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  padding-top:35px;
+
+}
+
+
+
+
+
+.coin-tail
+{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  padding-top:35px;
+  transform:rotateX(180deg);
+}
+#flip{margin-top:50px;}
+#roll{margin-top:30px;}
+#msg-coin{padding:10px;}
+#msg-roll{padding:20px;}
+#start-winner{margin-top:20px;float:right;}
+#msg-winner{animation: win 1s  ease-in-out infinite;}
+.spin{animation: spinning 1s linear infinite; }
+section{background-color:#72A0C1;padding-bottom:295px;}
+.dice{
+  width:100px;
+  height:100px;
+  border-radius:30%;
+  color:white;
+  border:2px solid white;
+  display:inline-block;
+  margin-top:20px;
+  background-color:#fff;
+}
+.dice_0::after{
+    content: "";
+    position: relative;
+    top:41px;
+    left: 42.5px;
+    display: block;
+    background: #000;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+
+}
+.dice_1::before{
+    content: "";
+    position: relative;
+    top:10px;
+    left: 70.5px;
+    display: block;
+    background: #000;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+}
+.dice_1::after{
+    content: "";
+    position: relative;
+    top:60px;
+    left: 20px;
+    display: block;
+    background: #000;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+}
+/*  3th dice */
+.dice_2::before{
+    content: "";
+    position: relative;
+    top:70px;
+    left: 20px;
+    display: block;
+    background: #000;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+}
+
+.dice_2::after{
+    content: "";
+    position: relative;
+    top:20px;
+    left: 45px;
+    display: block;
+    background: #000;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+}
+
+
+.dice_2 span::before{
+    content: "";
+    position: relative;
+    top:3px;
+    left: 75px;
+    display: block;
+    background: #000;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+}
+/*  4th dice */
+.dice_3::before{
+  content: "";
+  position: relative;
+  top:70px;
+  left: 20px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+
+}
+.dice_3::after{
+  content: "";
+  position: relative;
+  top:-20px;
+  left: 20px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+
+}
+
+.dice_3 span::before{
+
+  content: "";
+  position: relative;
+  top:4px;
+  left: 67px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+.dice_3 span::after{
+
+  content: "";
+  position: relative;
+  top:46px;
+  left: 67px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+/*   5th dice */
+.dice_4::before{
+  content: "";
+  position: relative;
+  top:70px;
+  left: 20px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+
+}
+.dice_4::after{
+  content: "";
+  position: relative;
+  top:-32px;
+  left: 20px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+
+}
+
+.dice_4 .side::before{
+
+  content: "";
+  position: relative;
+  top:4px;
+  left: 67px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+.dice_4 .side::after{
+
+  content: "";
+  position: relative;
+  top:46px;
+  left: 67px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+.dice_4 .center::before{
+
+  content: "";
+  position: relative;
+  top:5px;
+  left: 43px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+
+/*    6th dice*/
+.dice_5::before{
+  content: "";
+  position: relative;
+  top:70px;
+  left: 20px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+
+}
+.dice_5::after{
+  content: "";
+  position: relative;
+  top:-20px;
+  left: 20px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+
+}
+
+.dice_5 .side::before{
+
+  content: "";
+  position: relative;
+  top:4px;
+  left: 20px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+.dice_5 .side::after{
+
+  content: "";
+  position: relative;
+  top:17px;
+  left: 67px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+
+.dice_5 .center::before{
+
+  content: "";
+  position: relative;
+  top:-20px;
+  left: 67px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+.dice_5 .center::after{
+
+  content: "";
+  position: relative;
+  top:24px;
+  left: 67px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .nav-item{display:none;}
+  .toggle{display:inline-block !important;}
+  .scrolled-toggle{display:block;width:100px;text-align:center;}
+}
+
+
+@keyframes spinning {
+    from {
+        transform: rotateX(0deg);
+    }
+    to{
+
+      transform: rotateX(720deg);
+    }
+}
+
+
+@keyframes win {
+
+  0% {transform: scale(1);}
+  50% {  transform: scale(5);}
+
+}
